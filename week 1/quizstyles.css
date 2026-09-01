@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    background-color: rgb(222, 222, 99);
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-family: "Bangers", sans-serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: rgb(246, 77, 21);
+    background-color: white;
+    width: 75%;
+    margin: 20px auto 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.author {
+    font-family: "Bangers", sans-serif;
+    font-size: 18px;
+    margin: 10px 5px 14px 5px;
+}
+
+.questionarea {
+    width: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.question {
+    background-color: white;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.question-title {
+    font-family: "Bangers", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.question ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.question li {
+    margin: 8px;
+    padding: 2px;
+   
+    
+}
+ 
+.question button {
+  padding: 10px;
+  font-family: "Bangers", sans-serif;
+  font-size: 16px;
+  border: 1px none;
+
+  background-color: rgb(233, 107, 65);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.question button:hover {
+    background-color: rgb(236, 177, 157);
+    color: white;
+    transform: scale(1.2);
+}
