@@ -10,7 +10,6 @@ body {
 .title {
     font-family: "Bangers", sans-serif;
     font-size: 45px;
-    letter-spacing: 2px;
     color: rgb(246, 77, 21);
     background-color: white;
     width: 75%;
@@ -56,8 +55,6 @@ body {
 .question li {
     margin: 8px;
     padding: 2px;
-   
-    
 }
  
 .question button {
@@ -77,3 +74,15 @@ body {
     color: white;
     transform: scale(1.2);
 }
+
+.output {font-family: "Comic Sans MS";}
+
+.scoreButton {margin-top: 30px;
+padding: 10px;
+font-family: "Bangers", sans-serif;
+border: 2px solid rgb(246, 77, 21);
+width: 20%;
+font-size: 22px;}
+
+.scoreLine {font-size: 16px;
+font-family: "Bangers", sans-serif;}
