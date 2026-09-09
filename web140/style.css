@@ -120,7 +120,7 @@ body {
     width: 250px;
     height: 340px;
     align-self: center;
-    object-fit: fit;
+    object-fit: contain;
 
     border: 4px solid #222;
 }
