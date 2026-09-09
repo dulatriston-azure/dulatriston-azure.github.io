@@ -68,5 +68,4 @@ scoreButton.addEventListener("click", function()
   {score = 5;}
 
   scoreOutput.textContent = `Your Score: ${score} out of 5`;
-  score = 0;
 })
