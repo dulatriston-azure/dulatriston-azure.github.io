@@ -1,14 +1,4 @@
-/* ========================================
-   COLOR THEORY PROJECT
-======================================== */
 
-
-/* ========================================
-   COLOR PALETTES
-
-   Students should replace these colors
-   with their own colors.
-======================================== */
 
 const palettes = {
 
