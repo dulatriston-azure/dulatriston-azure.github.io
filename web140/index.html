@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
-    <script>document.addEventListener('DOMContentLoaded', function() {
+
+    <title>Image Remix & Icon Project</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+<script>document.addEventListener('DOMContentLoaded', function() {
 						if (document.documentElement.hasAttribute('lang')) {
 							document.documentElement.dataset.customLang = '';
 							return;
@@ -64,9 +73,9 @@
 							}
 						}
 					}
-				});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/embeds.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.9.217/unbundled/embeds.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
 					window.D2L.EmbedRenderer.renderEmbeds(document.body);
-				});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/mathjax.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.9.217/unbundled/mathjax.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
 			if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
 				document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
 					elm.setAttribute('style', 'display: block; height: 0.5rem;');
@@ -79,7 +88,7 @@
 
 				window.D2L.MathJax.loadMathJax({"renderLatex":true,"outputScale":1.5,"enableMML3Support":false});
 			}
-		});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/prism.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+		});</script><script src="https://s.brightspace.com/lib/bsi/2026.9.217/unbundled/prism.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
 					document.querySelectorAll('.d2l-code').forEach(code => {
 						window.D2L.Prism.formatCodeElement(code);
 					});
@@ -87,15 +96,15 @@
 			document.querySelectorAll('iframe[src*="quickLink.d2l"][src*="type=lti"]').forEach(iframe => {
 				iframe.style.borderStyle = 'none';
 			});
-		});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/context-provider-host-factory.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
+		});</script><script src="https://s.brightspace.com/lib/bsi/2026.9.217/unbundled/context-provider-host-factory.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
 			document.documentElement.setAttribute('data-mathjax-context', '{"renderLatex":true,"outputScale":1.5,"enableMML3Support":false}');
 			window.D2L.ContextProvider.createContextProviderHost();
 		});</script><script>
 					if (window.frameElement !== null && !document.documentElement.hasAttribute('data-oslo')) {
-						const osloSettings = {"batch":"/d2l/api/oslo/batch?languageId=1","collection":"/d2l/api/oslo/collection?languageId=1","version":"W/\"20.26.8.28153.638396676610101010\""};
+						const osloSettings = {"batch":"/d2l/api/oslo/batch?languageId=1","collection":"/d2l/api/oslo/collection?languageId=1","version":"W/\"20.26.9.24696.638396676610101010\""};
 						document.documentElement.setAttribute('data-oslo', JSON.stringify(osloSettings));
 					}
-				</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/creator.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
+				</script><script src="https://s.brightspace.com/lib/bsi/2026.9.217/unbundled/creator.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
 			const activities = [];
 			const practices = [];
 			const allPractices = document.querySelectorAll('.d2l-practice');
@@ -145,117 +154,415 @@
 						}
 					}
 
-					var url = '/d2l/customization/pearsonlti/6606/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script>
-  </head>
-  
-  <body>
-  <!-- NAVIGATION -->
+					var url = '/d2l/customization/pearsonlti/6606/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script></head>
+
+<body>
+
+    
+   <!-- Header and Navigation -->
+<header class="site-header">
     <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
 
-
-    <!-- HERO SECTION -->
-    <header class="hero">
-
-        <h1>Triston Dula</h1>
-
-        <p>WEB140 – Web Development Portfolio</p>
-
-        <a href="#about" class="hero-btn">
-            Learn About Me
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-image"></i>
+            Image Remix
         </a>
 
-    </header>
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery">
+                    <i class="fa-solid fa-images"></i>
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a href="#features">
+                    <i class="fa-solid fa-gears"></i>
+                    Features
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    <i class="fa-solid fa-phone"></i>
+                    Contact
+                </a>
+            </li>
+
+            <!-- Link to WEB140 Portfolio -->
+            <li>
+                <a
+                    href="https://dulatriston-azure.github.io/web140/"
+                    target="_blank"
+                >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    WEB140 Portfolio
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+</header>
 
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">
+    <!-- Hero Section -->
+    <main>
 
-        <div class="about-container">
+        <section id="home" class="hero">
 
-            <img src="images/ProfileImage.JPG"
-                alt="My Photo"
-                class="profile-pic"
-            >
+            <div class="hero-content">
+                <p class="eyebrow">WEB140 • Design Tools</p>
 
-            <div class="about-text">
-
-                <h2>About Me</h2>
+                <h1>Explore the Art of Image Editing</h1>
 
                 <p>
-                    Hi! My name is <strong>Triston</strong>.
-                    This page is to showcases the projects and exercises I complete in my web development course.
+                    Welcome to my Image Remix & Icon Challenge.
+                    Explore how different editing techniques can
+                    change the appearance and mood of an image. For this page we are focusing on the theme of gaming.
                 </p>
+
+                <a href="#gallery" class="button">
+                    Explore My Images
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+           
+
+        </section>
+
+
+        <!-- Image Gallery -->
+        <section id="gallery" class="section">
+
+            <div class="section-heading">
+                <p class="eyebrow">Image Editing</p>
+                <h2>Gaming Image Remix Gallery</h2>
 
                 <p>
-                    I've always had a interest in technology. Leading me to the wonderful world of programming! As an avid gamer i've witnessed the height of what programming abilities can achieve, so I'm trying my best to get acquainted with all sorts of languages. Web Development is some of the more fundamental programming to the overall programming field, which lead me to this class. 
+                    Each image below demonstrates a different
+                    image-editing technique completed in Canva.
                 </p>
-              <p class='skillsTitle'>Skills</p>
-              <ul>
-                <li>Beginner Python</li>
-                <li>Beginner Javascript</li>
-                <li>Intermediate HTML</li>
-                <li>Beginner Aloha POS Configuration</li>
-                <li>Beginner Command Center Configuration</li>
-                
-              </ul>
+            </div>
 
-                <!-- JavaScript interaction -->
+
+            <!-- Image 1: Black and White -->
+            <article class="image-project">
+
+                <h3>
+                    <i class="fa-solid fa-user"></i>
+                    01. The Classic — Black & White
+                </h3>
+
+                <p>
+                    This image demonstrates a black-and-white
+                    editing technique.
+                </p>
+
+                <div class="image-comparison">
+
+                    <div class="image-card">
+                        <h4>Original Image</h4>
+
+                        <img
+                            src="images/BlackNWhite-Original-1.jpg"
+                            alt="Colorful Girl with VR"
+                        >
+                    </div>
+
+                    <div class="image-card">
+                        <h4>Edited Image</h4>
+
+                        <img
+                            src="images/BlackNWhite-1.png"
+                            alt="Black-and-white edited Colorful Girl with VR"
+                        >
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Image 2: Saturation -->
+            <article class="image-project">
+
+                <h3>
+                    <i class="fa-solid fa-fire"></i>
+                    02. The Pop — Saturation
+                </h3>
+
+                <p>
+                    This image demonstrates an adjustment to
+                    color saturation.
+                </p>
+
+                <div class="image-comparison">
+
+                    <div class="image-card">
+                        <h4>Original Image</h4>
+
+                        <img
+                            src="images/Saturation-Original-2.webp"
+                            alt="Man in front of TV"
+                        >
+                    </div>
+
+                    <div class="image-card">
+                        <h4>Edited Image</h4>
+
+                        <img
+                            src="images/Saturation-2.png"
+                            alt="Man in front of TV with adjusted saturation"
+                        >
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Image 3: Contrast -->
+            <article class="image-project">
+
+                <h3>
+                    <i class="fa-solid fa-person-falling-burst"></i>
+                    03. The Drama — Contrast
+                </h3>
+
+                <p>
+                    This image demonstrates an adjustment to
+                    contrast between light and dark areas.
+                </p>
+
+                <div class="image-comparison">
+
+                    <div class="image-card">
+                        <h4>Original Image</h4>
+
+                        <img
+                            src="images/Contrast-Original-3.jpg"
+                            alt="Headset backlit silhouette"
+                        >
+                    </div>
+
+                    <div class="image-card">
+                        <h4>Edited Image</h4>
+
+                        <img
+                            src="images/Contrast-3.png"
+                            alt="Headset backlit silhouette with adjusted contrast"
+                        >
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Image 4: Monochromatic -->
+            <article class="image-project">
+
+                <h3>
+                    <i class="fa-solid fa-water"></i>
+                    04. The One-Color World — Monochromatic
+                </h3>
+
+                <p>
+                    This image demonstrates a monochromatic
+                    treatment using shades of one dominant color.
+                </p>
+
+                <div class="image-comparison">
+
+                    <div class="image-card">
+                        <h4>Original Image</h4>
+
+                        <img
+                        class="image-four"
+                            src="images/Monochromatic-Original-4.jpg"
+                            alt="Man playing VR Headset"
+                        >
+                    </div>
+
+                    <div class="image-card">
+                        <h4>Edited Image</h4>
+
+                        <img
+                        class="image-four"
+                            src="images/Monochromatic-4.png"
+                            alt="Monochromatic edited Man playing VR Headset"
+                        >
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Font Awesome Icon Section -->
+        <section id="features" class="section features-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">Font Awesome</p>
+
+                <h2>Icons That Support My Theme</h2>
+
+                <p>
+                    These icons were selected from Font Awesome
+                    and customized using CSS.
+                </p>
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+
+                   <i class="fa-solid fa-camera-retro feature-icon"></i>
+                    <h3>Photography</h3>
+
+                    <p>
+                        I tried to use photos that had alot of the colors and imagery behind gaming
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                   <i class="fa-solid fa-shuttle-space feature-icon"></i>
+
+                    <h3>Inspiration</h3>
+
+                    <p>
+                        I wanted to do gaming as its got a unique aesthetic. The neon lightning and tech gives it a unique feel.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <i class="fa-solid fa-paintbrush feature-icon"></i>
+
+                    <h3>Creativity</h3>
+
+                    <p>
+                        The photo editing tools allowed me to bring out the vibrancy of the photos. I used edits to make the colors more vibrant and pop better. 
+                    </p>
+
+                </article>
 
             </div>
-          
+
+        </section>
+
+
+        <!-- Icon Buttons -->
+        <section class="section icon-section">
+
+            <div class="section-heading">
+                <h2>Explore More</h2>
+
+                <p>
+                    Explore the edited images or find more of my work and contact information.
+                </p>
+            </div>
+
+            <div class="button-group">
+
+                <a href="#gallery" class="button">
+                    <i class="fa-solid fa-images"></i>
+                    View Gallery
+                </a>
+
+                <a href="#contact" class="button button-secondary">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Contact Me
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">Get in Touch</p>
+
+                <h2>Contact Information</h2>
+
+            </div>
+
+            <div class="contact-links">
+
+                <a href="mailto:dulatriston@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email Me
+                </a>
+
+                <a href="https://github.com/dulatriston-azure/dulatriston-azure.github.io" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/triston-dula-2889a72b4" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <p>
+            &copy; <span id="year"></span>
+            Image Remix & Icon Challenge
+        </p>
+
+        <div class="social-links">
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
         </div>
 
-    </section>
+    </footer>
 
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects-section">
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
-        <h2 class = 'projectsTitle'>Projects</h2>
-
-        <div class="assignment-buttons">
-
-            <!-- Week 1 project -->
-            <a href="/web140/week1/">
-                HTML, CSS & JavaScript Webpage
-            </a>
-
-            <!-- Future projects -->
-            <a href="/web140/colorTheory/">
-                Color Theory Project
-            </a>
-
-            <a href="/web140/typographyDesign/">
-                Typography Design
-            </a>
-
-            <a href="#">
-                Image Editing Showcase
-            </a>
-
-            <a href="#">
-                Figma Prototype
-            </a>
-
-            <a href="#">
-                WordPress Website
-            </a>
-
-            <a href="#">
-                Google Sites Project (Optional)
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- JAVASCRIPT -->
-    <script src="./script.js"></script>
-  </body>
+</body>
 </html>

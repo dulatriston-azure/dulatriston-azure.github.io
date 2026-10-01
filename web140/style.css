@@ -1,234 +1,410 @@
-html {
-  height: 100%;
-  background: 50% 50% no-repeat
-    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
-}
-
-/* ========================================
+/* ================================
    GENERAL STYLES
-   ======================================== */
+================================ */
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Calibri, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #333;
+    color: #222;
+    background-color: #f7f7f7;
 }
 
-.hero,
-.about-section,
-.projects-section {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.hovered {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ================================
+   HEADER AND NAVIGATION
+================================ */
+
+.site-header {
+    background-color: #222;
+    color: white;
+}
 
 .navbar {
-    background-color: #222;
-    padding: 15px;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
+.logo {
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
+.logo i {
+    margin-right: 0.4rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4b942;
+}
+
+.nav-links i {
+    margin-right: 0.3rem;
 }
 
 
-/* ========================================
+/* ================================
    HERO SECTION
-   ======================================== */
+================================ */
 
 .hero {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #74BBFB;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-.hero-btn {
-    display: inline-block;
-
-    margin-top: 20px;
-    padding: 12px 24px;
-
-    background-color: #222;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-.hero-btn:hover {
-    background-color: #555;
-}
-
-
-/* ========================================
-   ABOUT SECTION
-   ======================================== */
-
-.about-section {
-    padding: 60px 20px;
-    background-color: white;
-}
-
-.about-container {
-    max-width: 900px;
-    margin: auto;
-
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 40px;
+    gap: 3rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
 }
 
-.profile-pic {
-    width: 250px;
-    height: 340px;
-    align-self: center;
-    object-fit: fit;
-
-    border: 4px solid #222;
+.hero-content p {
+    max-width: 550px;
 }
 
-.about-text {
-    flex: 1;
+.eyebrow {
+    color: #8a4fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
 }
 
-.about-text h2 {
-    font-size: 2rem;
-}
-
-.skillsTitle {font-weight: Bold;
-             text-decoration: underline;
-             font-size: 1.8rem;
-             margin-bottom: 5px;}
-
-
-/* ========================================
-   JAVASCRIPT BUTTON
-   ======================================== */
-
-#welcomeButton {
-    margin-top: 15px;
-    padding: 10px 20px;
-
-    background-color: #222;
-    color: white;
-
-    border: none;
-    border-radius: 6px;
-
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#welcomeButton:hover {
-    background-color: #555;
+.hero-image img {
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 
-/* ========================================
-   PROJECTS SECTION
-   ======================================== */
+/* ================================
+   BUTTONS
+================================ */
 
-.projectsTitle {padding-bottom: 30px;
-               margin-top: 5px;}
-
-.projects-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f57f82;
-}
-
-.projects-section h2 {
-    font-size: 2rem;
-}
-
-.assignment-buttons {
-    max-width: 900px;
-    margin: 30px auto;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
-    gap: 15px;
-}
-
-.assignment-buttons a {
+.button {
     display: inline-block;
 
-    padding: 12px 20px;
+    padding: 0.8rem 1.3rem;
+    margin-top: 1rem;
 
     background-color: #222;
     color: white;
 
-    text-decoration: none;
+    border: 2px solid #222;
     border-radius: 6px;
 
-    transition: transform 0.2s;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.assignment-buttons a:hover {
-    transform: translateY(-2px);
-    background-color: #555;
+.button:hover {
+    background-color: #f4b942;
+    border-color: #f4b942;
+    color: #222;
+}
+
+.button i {
+    margin-left: 0.4rem;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #222;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 
-/* ========================================
+/* ================================
+   GENERAL SECTIONS
+================================ */
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.section-heading p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   IMAGE PROJECTS
+================================ */
+
+.image-project {
+    margin-bottom: 4rem;
+    padding: 2rem;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.image-project h3 {
+    margin-bottom: 0.8rem;
+}
+
+.image-project h3 i {
+    margin-right: 0.5rem;
+}
+
+.image-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.image-card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.image-card h4 {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.image-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+/* ================================
+   FEATURE CARDS
+================================ */
+
+.features-section {
+    max-width: 1200px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    text-align: center;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #8a4fff;
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    border: 2px solid #8a4fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.15);
+}
+
+/* ================================
+   ICON SECTION
+================================ */
+
+.icon-section {
+    text-align: center;
+}
+
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact-links a {
+    padding: 0.8rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    border-bottom-color: #8a4fff;
+    color: #8a4fff;
+}
+
+.contact-links i {
+    margin-right: 0.4rem;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem;
+
+    background-color: #222;
+    color: white;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f4b942;
+}
+
+
+/* ================================
    RESPONSIVE DESIGN
-   ======================================== */
+================================ */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-    .navbar ul {
+    .navbar {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
     }
 
-    .about-container {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .image-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
 }
-
